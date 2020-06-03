@@ -4,9 +4,20 @@ using UnityEngine;
 
 public class PaintBall : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision other)
+    public GameObject splatParticlePrefab;
+
+    public void Start()
     {
-        Debug.Log("Ball collided with: " + other.transform.name);
-        Destroy(gameObject);
+        GetComponent<Rigidbody>().useGravity = false;
+    }
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        Vector3 position = collision.contacts[0].point + collision.contacts[0].normal * 0.1f;
+        GameObject newParticles = Instantiate(splatParticlePrefab, position, Quaternion.identity);
+
+        newParticles.transform.LookAt(collision.contacts[0].point + collision.contacts[0].normal * 2f);
+
+        Destroy(gameObject, 0.1f);
     }
 }

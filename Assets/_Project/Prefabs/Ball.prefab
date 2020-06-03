@@ -137,3 +137,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9659206d84cbcec4c90ae5a7a38eb93e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  splatParticlePrefab: {fileID: 1549658012401432, guid: f15efcf6fa6a4de4ea105e382835198d,
+    type: 3}
