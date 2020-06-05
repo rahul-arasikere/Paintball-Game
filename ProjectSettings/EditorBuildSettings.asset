@@ -6,11 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/_Project/Scenes/PaintballGame.unity
     guid: 4fdf96b55e2201e46868fecb5ca2982e
+  - enabled: 0
+    path: Assets/_PaintballGame/Scenes/PaintballGame.unity
+    guid: ada72ec44b6c1644a97767a27fa9d09c
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 83cd6809f1ea32c4bb72766f0d061038,
       type: 2}
